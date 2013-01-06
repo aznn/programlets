@@ -1,7 +1,10 @@
 /*
+ * http://www.cs50.net/
  * Benchmarks speller program against the staff's implementation
  * with all the texts available in the ~cs50/pset5/textx folder
  *
+ * Will work only on CS50 Appliance
+ * 
  * - Azaan (azaan@outlook.com)
  *   2012
  */
