@@ -1,9 +1,9 @@
 <?php
 /**
  * Scrap Attendence from Christ University Website
- * Built Version 2.0
- * Copyright(c) Aeon
- * 2012
+ * Built Version 3.0
+ * Author : Aeon Axan (azaan@outlook.com)
+ * 2013
  *
  * Error codes:
  *  BAD_CREDENTIALS = 'username' or 'password' not set in the post request
