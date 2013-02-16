@@ -12,13 +12,20 @@
  *  INTERNAL_ERROR_3 = could not delete cookie file
  *  INTERNAL_ERROR_4 = RegEx error : Possibly username/password wrong
  */
+
 // check post data
-if(isset($_GET['username']) && isset($_GET['password']))
+if(isset($_POST['username']) && isset($_POST['password']))
+{
+    $_USERNAME = $_POST['username'];
+    $_PASSWORD = $_POST['password'];
+}
+//ERROR CONDITION
+else if (isset($_GET['username']) && isset($_GET['password']))
 {
     $_USERNAME = $_GET['username'];
     $_PASSWORD = $_GET['password'];
+    echo "Debug Mode, Use POST instead! </br>";
 }
-//ERROR CONDITION
 else
 {
     echo "BAD_CREDENTIALS";
@@ -108,7 +115,7 @@ if (preg_match_all('@<td width="40%" height="25"\s?>([^<]*)</td>@', $ret2, $name
 
 }
 
-//ERROR CONDITION
+// regex parse error, server returned a different page.
 else
 {
   echo "INTERNAL_ERROR_4";
