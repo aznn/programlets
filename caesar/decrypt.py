@@ -43,7 +43,7 @@ for i in range(0, 26):
 
 for i in res:
     plain = rot(cypher, i)
-    print "\nROT%d = %s" % (i, plain)
+    print "\nROT%d = %s" % (26-i, plain)
     for sentence in allPossibilities(plain):
         print "\t%s" % sentence
 
